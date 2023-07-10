@@ -7,6 +7,20 @@
         font-size: 25px;
         color: red;
     }
+
+    .flex-parent{
+        padding-top: 4%;
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      
+    .box {
+        display: inline-block;
+        padding: 5%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
 </style>
 {% endblock header %}
 {% block body %}
@@ -24,8 +38,8 @@
 </ul>
 {% endif %}
 <br>
-<div class="container">
-    <div class="card">
+<div class="flex-parent">
+    <div class="box">
         <div class="container-fliud">
             <div class="wrapper row">
                 <div class="preview col-md-5">
@@ -132,7 +146,7 @@
             </div>
             <div class="bottom">
                 <audio controls="" _autoplay="" name="media"
-                    style="margin-left: 20px;margin-bottom: 10px;width: 1245px;height:30px">
+                    style="margin-left: 20px;margin-bottom: 10px;width: 95%;height:30px">
                     <source src="{{last_played.song_file.url}}" type="audio/mpeg"></audio>
             </div>
         </div>

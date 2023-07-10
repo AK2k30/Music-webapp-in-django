@@ -189,7 +189,7 @@ def all_songs(request):
 
     context = {
         'songs': songs,
-        'last_played':last_played_song,#type: ignore
+        # 'last_played':last_played_song,
         'first_time':first_time,
         'all_singers': all_singers,
         'all_languages': all_languages,
@@ -305,7 +305,7 @@ def playlist_songs(request, playlist_name):
 
 def favourite(request):
     songs = Song.objects.filter(favourite__user=request.user, favourite__is_fav=True).distinct()
-    print(f'songs: {songs}')
+    print(f'songs: {songs}') # type: ignore
     
     if request.method == "POST":
         song_id = list(request.POST.keys())[1]
@@ -314,3 +314,4 @@ def favourite(request):
         messages.success(request, "Removed from favourite!")
     context = {'songs': songs}
     return render(request, 'musicapp/favourite.html', context=context)
+

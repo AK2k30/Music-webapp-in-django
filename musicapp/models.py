@@ -38,3 +38,7 @@ class Favourite(models.Model):
 class Recent(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     song = models.ForeignKey(Song, on_delete=models.CASCADE)
+    album = models.CharField(max_length=200, default='album')
+    singer = models.CharField(max_length=200, default='singer')
+    
+    

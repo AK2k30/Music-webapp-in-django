@@ -4,6 +4,24 @@
 
 {% block body %}
 
+
+<style>
+
+  .flex-parent{
+    padding-top: 4%;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .box {
+    display: inline-block;
+    padding: 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  </style>
+
 <br>
 <!-- English Songs -->
 <div class="container">
@@ -12,10 +30,10 @@
   </header>
   <hr>
   <!-- Song list -->
-  <div class="row" style="margin-right: 65px;margin-left:-15px">
+  <div class="flex-parent">
     {% if english_songs %}
     {% for song in english_songs %}
-    <div class="col-sm-2 col-md-2" style="padding-bottom: 15px;">
+    <div class="box">
       <div class="hovereffect">
         <img src="{{ song.song_img.url}}" class="img-responsive" height="135" width="135"
           style="border-radius: 8px 8px 8px 8px;">

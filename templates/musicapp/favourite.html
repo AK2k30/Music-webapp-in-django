@@ -5,6 +5,13 @@
 {% block body %}
 <br>
 
+<style>
+  /* Add this custom CSS rule to change the width of the table */
+  .table {
+    width: 10%; /* Replace 100% with your desired width */
+  }
+</style>
+
 {% if messages %}
 <ul class="messages" style="width: 600px;margin-left:400px">
   {% for message in messages %}
@@ -24,7 +31,7 @@
   <h3>Favourites</h3>
 </center>
 
-<table class="table table-hover table-primary">
+<table class="table table-hover table-primary" >
   <thead>
     <tr>
       <th scope="col">#</th>
