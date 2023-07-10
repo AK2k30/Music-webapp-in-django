@@ -1,6 +1,7 @@
 # Django based music streaming website
 
 This is the demo link:https://singh467.pythonanywhere.com/authentication/signup/
+
 ![GitHub stars](https://img.shields.io/github/stars/rajaprerak/MusicPlayer) 
 [![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/rajaprerak/MusicPlayer/commits/master)
 [![Website shields.io](https://img.shields.io/badge/website-up-yellow)](https://galvanic-music.herokuapp.com/)
